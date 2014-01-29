@@ -6,7 +6,15 @@ $(document).ready(function()
 
 
 	$(".btn.btn-seeList").on("click", function(){
-		
+		if (game.viewPage("results"))
+		{
+			// Response for succesfully viewing the page
+
+		}
+		else
+		{
+			alert("You need to fill out all the inputs!");
+		}
 	});
 
 });

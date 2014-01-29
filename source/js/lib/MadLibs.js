@@ -126,27 +126,11 @@
 		/**
 		* @method viewPage
 		* @description Transition between two pages
-		* @param string page Either "input" or "results"
+		* @param string page Either "input" or ""
 		*/
-		viewPage:function(page)
+		viewPage:function()
 		{
-			if (page == "input")
-			{
-				// Switch to input
-				this.$inputPage.addClass("is-page-primary");
-				this.$resultsPage.removeClass("is-page-primary");
-				return true;
-			}else if (page =="results")
-			{
-				if (this.inputComplete())
-				{
-					this.$inputPage.removeClass("is-page-primary");
-					this.$resultsPage.addClass("is-page-primary");
-					return true;					
-				}else{
-					return false;
-				}
-			}
+
 		}
 
 
