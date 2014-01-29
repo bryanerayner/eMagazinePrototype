@@ -1,59 +1,104 @@
-/*
-Syntax error: File to import not found or unreadable: mixins/layout.
-              Load paths:
-                C:/Users/rayn0021/My Documents/github/eMagazinePrototype/source
-                C:/Users/rayn0021/My Documents/github/eMagazinePrototype/source/scss
-        on line 1 of scss/components/layout.scss
-        from line 4 of scss/styles.scss
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
 
-1: @import "variables";
-2: 
-3: @import "components/base";
-4: @import "components/layout";
-5: @import "components/word";
+body {
+  font: 1em Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
 
-Backtrace:
-scss/components/layout.scss:1
-scss/styles.scss:4
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: mixins/layout.\A               Load paths:\A                 C:/Users/rayn0021/My Documents/github/eMagazinePrototype/source\A                 C:/Users/rayn0021/My Documents/github/eMagazinePrototype/source/scss\A         on line 1 of scss/components/layout.scss\A         from line 4 of scss/styles.scss\A \A 1: @import \"variables\";\A 2: \A 3: @import \"components/base\";\A 4: @import \"components/layout\";\A 5: @import \"components/word\";"; }
+ul {
+  list-style-type: none; }
+
+ol {
+  counter-reset: outerOL;
+  list-style-type: none; }
+  ol ol {
+    counter-reset: innerOL; }
+    ol ol > li {
+      counter-increment: innerOL; }
+  ol > li {
+    counter-increment: outerOL; }
+
+main {
+  padding-top: 54px; }
+
+article {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
+  margin: 0;
+  padding: 0; }
+
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.l-left {
+  float: left; }
+
+.l-right {
+  float: right; }
+
+.l-constrained {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto; }
+  .l-constrained.l-constrained-wider {
+    max-width: 1200px; }
+
+.l-topBar {
+  position: relative;
+  top: 0;
+  width: 100%; }
+  .l-topBar.is-pinned {
+    position: fixed; }
+
+.l-bottomBar {
+  border: 1px solid;
+  padding: 18px 30px 0;
+  width: 100%; }
+
+.l-colourstrip {
+  width: 100%; }
+
+.l-viewMore {
+  float: right; }
+
+.l-grid-container {
+  width: 100%; }
+  .l-grid-container [class*="l-grid-cell"] {
+    float: left; }
+    .l-grid-container [class*="l-grid-cell"]:last-child {
+      float: right; }
+    .l-grid-container [class*="l-grid-cell"]:last-child.l-grid-last {
+      float: left; }
+  .l-grid-container .l-grid-cell-1 {
+    width: 100%; }
+  .l-grid-container .l-grid-cell-3 {
+    width: 33.33%; }
+  .l-grid-container .l-grid-cell-5 {
+    width: 20%; }
+
+.l-list-container .l-list-1 {
+  float: left;
+  width: 100%; }
+
+.l-list-horizontal-container li {
+  float: left;
+  margin-right: 20px; }
+
+.l-relative {
+  position: relative; }
+
+.l-absoluteCenter {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
