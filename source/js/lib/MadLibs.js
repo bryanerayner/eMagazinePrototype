@@ -112,6 +112,7 @@
 		/**
 		* @method inputComplete
 		* @description Return whether or not each input tag is filled out.
+		* @returns boolean Whether or not each input tag is filled out.
 		*/
 		inputComplete:function()
 		{
@@ -126,11 +127,27 @@
 		/**
 		* @method viewPage
 		* @description Transition between two pages
-		* @param string page Either "input" or ""
+		* @param string page Either "input" or "results"
 		*/
-		viewPage:function()
+		viewPage:function(page)
 		{
-
+			if (page == "input")
+			{
+				// Switch to input
+				this.$inputPage.addClass("is-page-primary");
+				this.$resultsPage.removeClass("is-page-primary");
+				return true;
+			}else if (page =="results")
+			{
+				if (this.inputComplete())
+				{
+					this.$inputPage.removeClass("is-page-primary");
+					this.$resultsPage.addClass("is-page-primary");
+					return true;					
+				}else{
+					return false;
+				}
+			}
 		}
 
 
