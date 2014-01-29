@@ -1,0 +1,27 @@
+.l-madLibs-input:after, .l-madLibs-results:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.l-madLibs-input {
+  width: 70%;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 600px; }
+
+.l-madLibs-results {
+  width: 70%;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  height: 600px; }
+
+.l-madLibs-fullscreen {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
