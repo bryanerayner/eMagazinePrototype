@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Mad Libs Prototype</title>
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<div class="l-constrained">
+		<div class="l-wordList">
+			<div class="page page-input">
+				<div class="page-background page-background-input">
+					
+				</div>
+
+				<form action="" class = "page-wordChoices">
+					
+					<input type="text" class="word word-input" data-word="noun1" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="noun2" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="noun3" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="noun4" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="noun5" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="verb1" data-wordType = "verb">
+					<input type="text" class="word word-input" data-word="adjective1" data-wordType = "adjective">
+					<input type="text" class="word word-input" data-word="noun6" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="verb2" data-wordType = "verb">
+					<input type="text" class="word word-input" data-word="verb3" data-wordType = "verb">
+					<input type="text" class="word word-input" data-word="noun7" data-wordType = "noun">
+					<input type="text" class="word word-input" data-word="adjective2" data-wordType = "adjective">
+
+				</form>
+				<div class="btn btn-seeList">See The List!</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="l-constrained">
+		<div class="l-page">
+			
+			<div class="page page-results">
+
+
+
+				<div class="page-background page-background-display">
+					
+				</div>
+
+
+
+				<div class="page-wordDisplay">
+					<span class = "word word-output wordType-noun" id="noun1"></span>
+					<span class = "word word-output wordType-noun" id="noun2"></span>
+					<span class = "word word-output wordType-noun" id="noun3"></span>
+					<span class = "word word-output wordType-noun" id="noun4"></span>
+					<span class = "word word-output wordType-noun" id="noun5"></span>
+					<span class = "word word-output wordType-verb" id="verb1"></span>
+					<span class = "word word-output wordType-adjective" id="adjective1"></span>
+					<span class = "word word-output wordType-noun" id="noun6"></span>
+					<span class = "word word-output wordType-verb" id="verb2"></span>
+					<span class = "word word-output wordType-verb" id="verb3"></span>
+					<span class = "word word-output wordType-noun" id="noun7"></span>
+					<span class = "word word-output wordType-adjective" id="adjective2"></span>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<script src = "js/jquery-1.11.0.min.js" type = "text/javascript"></script>
+	<script src = "js/lodash-2.4.1.min.js" type = "text/javascript"></script>
+	<script src = "js/madlibs.js" type = "text/javascript"></script>
+</body>
+</html>
