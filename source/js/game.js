@@ -2,7 +2,7 @@ var game;
 
 $(document).ready(function()
 {
-	game = new MadLibs.Page($(".page.page-input"), $("page.page-results"));
+	game = new MadLibs.Page($(".page.page-input"), $(".page.page-results"));
 
 
 	$(".btn.btn-seeList").on("click", function(){

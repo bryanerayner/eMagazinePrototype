@@ -35,6 +35,77 @@
 		return wordData;
 	};
 
+
+	// Make a list of humanized numbers. 
+	var humanizedNumbers = ["Zero",
+							"One",
+							"Two",
+							"Three",
+							"Four",
+							"Five",
+							"Six",
+							"Seven",
+							"Eight",
+							"Nine",
+							"Ten",
+							"Eleven",
+							"Twelve",
+							"Thirteen",
+							"Fourteen",
+							"Fifteen",
+							"Sixteen",
+							"Seventeen",
+							"Eighteen",
+							"Nineteen"];
+	var humanizedNumbersBaseTen = ["", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Nintey"];
+	for (var i = 20, ii = 99; i <= ii; i++)
+	{
+		var result = "";
+		var baseTenRoot = humanizedNumbersBaseTen[Math.round(i/10)] || "";
+
+		var iModTen = i%10;
+		if (baseTenRoot && iModTen)
+		{
+			result += " ";
+			result += humanizedNumbers[iModTen];
+		}
+
+		if (result)
+		{
+			humanizedNumbers.push(result);
+		}
+	}
+
+
+	/**
+	* @method pluralizeWord
+	* @description Pluralize a word. So, 'noun', 1, becomes "A noun", 'noun', 2, becomes "Two nouns"
+	* @param string wordType The word, eg "noun", "adjective"
+	* @param number [count=1] The number of words.
+	*/
+	var pluralizeWord = MadLibs.pluralizeWord = function(word, count)
+	{
+		count || (count = 1);
+		word = word.toLowerCase();
+		var number = "A";
+		var wordSuffix = "";
+		var anLetters = ["a", "e", "i", "o", "u"];
+		if (count == 1)
+		{
+			var firstLetter = word.charAt(0);
+			if (_.contains(anLetters, firstLetter))
+			{
+				number = "An";
+			}
+		}else
+		{
+			number = humanizedNumbers[count];
+			wordSuffix = "s";
+		}
+		return number + " " + word + wordSuffix;
+	}
+
+
 	var wordTypes = ["adjective", "noun", "verb", "adverb", "pronoun"];
 
 	var wordTypeCSSClasses = _.map(wordTypes, function(wordType){
@@ -67,7 +138,29 @@
 
 		configure:function(){
 			this.viewPage(this.currentPage);
+			this.fillInputLabels();
 		},
+
+		/**
+		* @method fillInputLabels
+		* @description Fill out the input labels that are not filled out already.
+		*/
+		fillInputLabels:function () {
+
+			// Find each input
+			this.$inputPage.find("input").each(function()
+			{
+				var $t = $(this);
+				var wordType = $t.attr("data-wordType");
+				if (!wordType) {return;}
+				var $label = $('label[for="'+$t.attr("id")+'"]');
+				if (!$label.text())
+				{
+					$label.text(pluralizeWord(wordType));
+				}				
+			});
+		},
+
 
 		/**
 		@method getWordData
@@ -141,6 +234,7 @@
 			{
 				if (this.inputComplete())
 				{
+					this.displayWords();
 					this.$inputPage.removeClass("is-page-primary");
 					this.$resultsPage.addClass("is-page-primary");
 					return true;					
