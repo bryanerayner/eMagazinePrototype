@@ -1,0 +1,34 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+body {
+  font: 1em Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+ol {
+  counter-reset: outerOL;
+  list-style-type: none; }
+  ol ol {
+    counter-reset: innerOL; }
+    ol ol > li {
+      counter-increment: innerOL; }
+  ol > li {
+    counter-increment: outerOL; }
+
+main {
+  padding-top: 54px; }
+
+article {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
+  margin: 0;
+  padding: 0; }

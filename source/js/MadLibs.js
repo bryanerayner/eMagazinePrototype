@@ -112,6 +112,7 @@
 		/**
 		* @method inputComplete
 		* @description Return whether or not each input tag is filled out.
+		* @returns boolean Whether or not each input tag is filled out.
 		*/
 		inputComplete:function()
 		{
