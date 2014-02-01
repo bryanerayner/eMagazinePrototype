@@ -37,4 +37,15 @@ $(document).ready(function()
 		}
 	});
 
+
+	/*
+	
+	Should you wish to display another page here, use code similar to the following:
+
+
+	game.viewPage("myPageNameHere");
+
+	 */
+
+
 });

@@ -9,6 +9,16 @@ body {
   margin: 0;
   padding: 0; }
 
+textarea, input {
+  background: transparent;
+  outline: 0;
+  border-image: none;
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 2em; }
+  textarea:focus, input:focus {
+    outline: 0; }
+
 ul {
   list-style-type: none; }
 
@@ -32,3 +42,5 @@ article {
 h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   margin: 0;
   padding: 0; }
+
+/*# sourceMappingURL=base.css.map */
