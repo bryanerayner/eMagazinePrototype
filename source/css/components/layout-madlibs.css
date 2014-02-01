@@ -1,21 +1,36 @@
-.l-madLibs-input:after, .l-madLibs-results:after {
+.l-madLibs-input:after, .l-madLibs-results:after, .l-madLibs-popup:after {
   display: table;
   content: " ";
   clear: both; }
 
+/*
+
+ Includes styles for differing types of presntation elements. 
+ Rounded borders, CSS arrows, etc are found here.
+
+
+
+ */
 .l-madLibs-input {
-  width: 70%;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  height: 600px; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
 
 .l-madLibs-results {
-  width: 70%;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  height: 600px; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.l-madLibs-popup {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
 
 .l-madLibs-fullscreen {
   width: 100%;
@@ -25,3 +40,5 @@
   left: 0;
   right: 0;
   bottom: 0; }
+
+/*# sourceMappingURL=layout-madlibs.css.map */

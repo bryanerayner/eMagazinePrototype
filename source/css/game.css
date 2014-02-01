@@ -1,0 +1,156 @@
+/* Layout */
+
+/*
+By changing the values of these styling rules, the pieces of
+the game can be changed to be whatever they need to be.
+ */
+ 
+
+/* Ensure the width for the pages is correct. */
+
+.l-madLibs-input
+{
+	/*Change these values to be the width and height of the input image*/
+	max-width: 600px; max-height: 900px;
+}
+
+.l-madLibs-results
+{
+	/*Change these values to be the width and height of the results image*/
+	max-width: 600px; max-height: 900px;
+}
+
+.l-madLibs-popup
+{
+	/*Change these values to be the width and height of the results image*/
+	max-width: 600px; max-height: 900px;
+}
+
+
+/* Propery position the action buttons on the page. */
+
+
+/*Position page actions for the input page*/
+.page-input .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+	bottom:40px; right: 20px;
+}
+
+/*Position page actions for the results page*/
+.page-results .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+	bottom:40px; 
+	right: 50px;
+}
+
+/*Position page actions for the results page*/
+.page-popup .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+	bottom:40px; 
+	right: 50px;
+}
+
+/*Position the See Results button. */
+#btn-seeResults
+{
+	left: 250px;
+	position: relative;
+}
+
+/*Position the See List button. */
+#btn-seeList	
+{
+	left: 250px;
+	position: relative;
+}
+
+/*Position the See List button. */
+#btn-ok
+{
+	left: 250px;
+	position: relative;
+}
+
+
+/*Properly position each individual word*/
+#word1Input
+{
+    top: 220px;
+    left: 40px;
+}
+#word2Input
+{
+    top: 290px;	
+    left: 40px;
+}
+#word3Input
+{
+    top: 370px;	
+    left: 40px;
+}
+#word4Input
+{
+    top: 453px;	
+    left: 40px;
+}
+#word5Input
+{
+    top: 530px;	
+    left: 40px;
+}
+#word6Input
+{
+    top: 600px;	
+    left: 40px;
+}
+#word7Input
+{
+    top: 670px;	
+    left: 40px;
+}
+
+#word1Output
+{
+    top: 140px;
+
+    right: 110px;
+}
+#word2Output
+{
+    top: 190px;
+	
+    left: 320px;
+}
+#word3Output
+{
+    top: 323px;
+	
+    left: 280px;
+}
+#word4Output
+{
+    top: 437px;
+	
+    left: 120px;
+}
+#word5Output
+{
+    top: 490px;
+	
+    left: 40px;
+}
+#word6Output
+{
+    top: 670px;
+	
+    left: 130px;
+}
+#word7Output
+{
+    top: 730px;
+	
+    left: 150px;
+}

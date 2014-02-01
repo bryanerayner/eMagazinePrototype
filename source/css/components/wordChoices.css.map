@@ -1,0 +1,6 @@
+{
+"version": 3,
+"mappings": "AAAA,YACC;EACC,KAAK,EAAC,IAAI;EAEX,oCACC;IACC,QAAQ,EAAE,QAAQ;EAIpB,qCACC;IACC,QAAQ,EAAE,QAAQ;EAKpB,+BACC;IACA,KAAK,EAAC,IAAI;IAAE,QAAQ,EAAE,QAAQ;EAG/B,+BACC;IACA,KAAK,EAAC,IAAI;IAAE,QAAQ,EAAE,QAAQ",
+"sources": ["../../scss/components/wordChoices.scss"],
+"file": "wordChoices.css"
+}

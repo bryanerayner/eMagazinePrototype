@@ -4,7 +4,16 @@ $(document).ready(function()
 {
 	game = new MadLibs.Page($(".page.page-input"), $(".page.page-results"));
 
-
+	$("#btn-ok").on("click", function(){
+		if (game.viewPage("input"))
+		{
+			// Response for succesfully viewing the page
+		}
+		else
+		{
+			game.viewPage("input");
+		}
+	});
 	$("#btn-seeResults").on("click", function(){
 		if (game.viewPage("results"))
 		{
@@ -13,14 +22,14 @@ $(document).ready(function()
 		}
 		else
 		{
-			alert("You need to fill out all the inputs!");
+			game.viewPage("popup");
 		}
 	});
 	$("#btn-seeList").on("click", function(){
 		if (game.viewPage("input"))
 		{
 			// Response for succesfully viewing the page
-
+			game.reset();
 		}
 		else
 		{
