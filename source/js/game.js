@@ -3,6 +3,14 @@ var game;
 $(document).ready(function()
 {
 	game = new MadLibs.Page($(".page.page-input"), $(".page.page-results"));
+	
+	// This code switches the game to the popup and then quickly back to the input. This rectifies a problem with the game on Android tablets.
+	_.defer(function(){
+		game.viewPage("intro");
+		_.defer(function(){
+			game.viewPage("input");			
+		});	
+	});
 
 	$("#btn-ok").on("click", function(){
 		if (game.viewPage("input"))

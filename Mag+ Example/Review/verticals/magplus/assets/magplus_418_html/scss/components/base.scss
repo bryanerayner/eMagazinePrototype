@@ -15,7 +15,26 @@ body
 		margin:0; padding:0;
 }
 
-	
+textarea, input{
+	background: transparent;
+	outline: 0;
+	border-image: none;
+	border: 0;
+	border-bottom: 1px solid;
+	font-size:2em;
+
+	&:focus
+	{
+		outline:0;
+	}
+}
+
+input:focus{
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
 section
 	{
 

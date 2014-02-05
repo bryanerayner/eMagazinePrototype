@@ -9,6 +9,20 @@ body {
   margin: 0;
   padding: 0; }
 
+textarea, input {
+  background: transparent;
+  outline: 0;
+  border-image: none;
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 2em; }
+  textarea:focus, input:focus {
+    outline: 0; }
+
+input:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
 ul {
   list-style-type: none; }
 
@@ -33,7 +47,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   margin: 0;
   padding: 0; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .l-madLibs-popup:after, .l-madLibs-page:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
   display: table;
   content: " ";
   clear: both; }
@@ -103,24 +117,46 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   right: 0;
   bottom: 0; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .l-madLibs-popup:after, .l-madLibs-page:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
   display: table;
   content: " ";
   clear: both; }
 
+/*
+
+ Includes styles for differing types of presntation elements. 
+ Rounded borders, CSS arrows, etc are found here.
+
+
+
+ */
 .l-madLibs-input {
-  width: 70%;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  height: 600px; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
 
 .l-madLibs-results {
-  width: 70%;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  height: 600px; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.l-madLibs-popup {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.l-madLibs-page {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
 
 .l-madLibs-fullscreen {
   width: 100%;
@@ -131,7 +167,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   right: 0;
   bottom: 0; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .l-madLibs-input:after, .l-madLibs-results:after, .l-madLibs-popup:after, .l-madLibs-page:after, .page:after, .page .page-wordChoices:after, .page .page-background:after {
   display: table;
   content: " ";
   clear: both; }
@@ -155,10 +191,10 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   position: absolute; }
   .page .page-wordChoices {
     position: absolute;
-    width: 80%;
-    height: 70%;
-    top: 10%;
-    left: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: 10; }
   .page .page-background {
     background: #237623;
@@ -171,6 +207,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
     height: 100%;
     position: absolute; }
     .page .page-background.page-background-input {
+      background: #237623; }
+    .page .page-background.page-background-intro {
       background: #237623; }
     .page .page-background.page-background-results {
       background: #E4954C; }
@@ -186,12 +224,17 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
 .wordChoices {
   width: 100%; }
   .wordChoices .wordChoices-inputGroup {
-    float: left;
-    clear: left;
-    width: 100%; }
+    position: absolute; }
+  .wordChoices .wordChoices-outputGroup {
+    position: absolute; }
   .wordChoices .wordChoices-label {
-    float: left;
-    width: 40%; }
+    width: 100%;
+    position: relative; }
   .wordChoices .wordChoices-input {
-    float: left;
-    width: 60%; }
+    width: 100%;
+    position: relative; }
+
+textarea, input {
+  border-bottom-color: #232323; }
+
+/*# sourceMappingURL=styles.css.map */

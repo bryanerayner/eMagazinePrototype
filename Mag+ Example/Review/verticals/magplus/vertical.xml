@@ -4,8 +4,8 @@
 	</tower>
 	<deck>
 		<slide slide-id="slide-1" height="1280" background-color="255white" background-color-rgb="255,255,255">
-			<block id="game_example" margin-left="240" margin-top="240" type="html" height="1040" width="1040" pinning-edge="left" pin-to="outer-left" vpinning-edge="top" vpin-to="outer-top">
-				<html type="0" scales-page-to-fit="1" resize-on-rotate="0" src="magplus_418_html/game.html"/>
+			<block id="game_example" margin-left="238" type="html" height="1279" width="1039" pinning-edge="left" pin-to="outer-left" vpinning-edge="top" vpin-to="outer-top">
+				<html type="0" scales-page-to-fit="0" resize-on-rotate="0" src="magplus_418_html/game.html"/>
 			</block>
 		</slide>
 	</deck>

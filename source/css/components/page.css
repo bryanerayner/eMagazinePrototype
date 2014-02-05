@@ -39,6 +39,8 @@
     position: absolute; }
     .page .page-background.page-background-input {
       background: #237623; }
+    .page .page-background.page-background-intro {
+      background: #237623; }
     .page .page-background.page-background-results {
       background: #E4954C; }
   .page .page-actions {

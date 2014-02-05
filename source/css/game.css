@@ -26,6 +26,12 @@ the game can be changed to be whatever they need to be.
 	max-width: 600px; max-height: 900px;
 }
 
+.l-madLibs-page
+{
+    /*Change these values to be the width and height of the input image*/
+    max-width: 600px; max-height: 900px;
+}
+
 
 /* Propery position the action buttons on the page. */
 
@@ -67,7 +73,7 @@ the game can be changed to be whatever they need to be.
 	position: relative;
 }
 
-/*Position the See List button. */
+/*Position the ok button. */
 #btn-ok
 {
 	left: 250px;
@@ -112,6 +118,7 @@ the game can be changed to be whatever they need to be.
     left: 40px;
 }
 
+/*Properly position each individual word for the outputs.*/
 #word1Output
 {
     top: 140px;

@@ -19,6 +19,10 @@ textarea, input {
   textarea:focus, input:focus {
     outline: 0; }
 
+input:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
 ul {
   list-style-type: none; }
 
@@ -203,6 +207,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
     height: 100%;
     position: absolute; }
     .page .page-background.page-background-input {
+      background: #237623; }
+    .page .page-background.page-background-intro {
       background: #237623; }
     .page .page-background.page-background-results {
       background: #E4954C; }

@@ -161,6 +161,20 @@
 			});
 		},
 
+		/**
+		 * @method reset
+		 * @description Reset all the input tags, as if the game had never been played.
+		 */
+		reset:function()
+		{
+			// Find each input & reset the value
+			this.$inputPage.find("input").each(function()
+			{
+				var $t = $(this);
+				$t.val("");
+			});
+			this.displayWords();
+		},
 
 		/**
 		@method getWordData
@@ -224,22 +238,42 @@
 		*/
 		viewPage:function(page)
 		{
+			this.$inputPage.parent().siblings().find(".page").removeClass("is-page-primary");
+
 			if (page == "input")
 			{
 				// Switch to input
+				this.$inputPage.siblings().removeClass("is-page-primary");
+				this.$resultsPage.siblings().removeClass("is-page-primary");
+
 				this.$inputPage.addClass("is-page-primary");
-				this.$resultsPage.removeClass("is-page-primary");
+
 				return true;
 			}else if (page =="results")
 			{
 				if (this.inputComplete())
 				{
 					this.displayWords();
-					this.$inputPage.removeClass("is-page-primary");
+
+					
 					this.$resultsPage.addClass("is-page-primary");
 					return true;					
 				}else{
 					return false;
+				}
+			}else
+			{
+				var $sibling = this.$inputPage.parent().siblings().find(".page.page-"+page);
+				if ($sibling.length)
+				{
+					$sibling.addClass("is-page-primary");
+				}else
+				{
+					var $sibling = this.$resultsPage.parent().siblings().find(".page.page-"+page);
+					if ($sibling.length)
+					{
+						$sibling.addClass("is-page-primary");
+					}
 				}
 			}
 		}

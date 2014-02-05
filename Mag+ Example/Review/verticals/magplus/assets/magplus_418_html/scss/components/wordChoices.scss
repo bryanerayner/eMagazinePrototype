@@ -4,20 +4,25 @@
 
 	.wordChoices-inputGroup
 		{
-			float:left; clear:left;
-			width: 100%;
+			position: absolute;
+			
+
+	}
+	.wordChoices-outputGroup
+		{
+			position: absolute;
 			
 
 	}
 
 	.wordChoices-label
 		{
-			float:left; width:40%;
+		width:100%; position: relative;
 	}
 
 	.wordChoices-input
 		{
-			float:left; width:60%;
+		width:100%; position: relative;
 	}
 
 }
