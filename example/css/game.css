@@ -82,17 +82,82 @@ the game can be changed to be whatever they need to be.
 
 
 /*Properly position each individual word*/
-
-/*
 #word1Input
 {
-    top: 0px;
-    left: 0px;
-}*/
+    top: 220px;
+    left: 40px;
+}
+#word2Input
+{
+    top: 290px;	
+    left: 40px;
+}
+#word3Input
+{
+    top: 370px;	
+    left: 40px;
+}
+#word4Input
+{
+    top: 453px;	
+    left: 40px;
+}
+#word5Input
+{
+    top: 530px;	
+    left: 40px;
+}
+#word6Input
+{
+    top: 600px;	
+    left: 40px;
+}
+#word7Input
+{
+    top: 670px;	
+    left: 40px;
+}
 
 /*Properly position each individual word for the outputs.*/
-/*#word1Output
+#word1Output
 {
-    top: 0px;
-    left: 0px;
-}*/
+    top: 140px;
+
+    left: 390px;
+}
+#word2Output
+{
+    top: 190px;
+	
+    left: 320px;
+}
+#word3Output
+{
+    top: 323px;
+	
+    left: 280px;
+}
+#word4Output
+{
+    top: 437px;
+	
+    left: 120px;
+}
+#word5Output
+{
+    top: 490px;
+	
+    left: 40px;
+}
+#word6Output
+{
+    top: 670px;
+	
+    left: 130px;
+}
+#word7Output
+{
+    top: 730px;
+	
+    left: 150px;
+}

@@ -1,0 +1,34 @@
+@import "mixins/layout";
+@import "mixins/presentation";
+
+.l-madLibs-input
+	{
+		@include absoluteTopLeft();
+		@extend %clearfix;
+		
+}
+
+.l-madLibs-results
+	{
+		@include absoluteTopLeft();
+		@extend %clearfix;
+}
+
+.l-madLibs-popup
+	{
+		@include absoluteTopLeft();
+		@extend %clearfix;
+}
+
+.l-madLibs-page
+	{
+		@include absoluteTopLeft();
+		@extend %clearfix;
+}
+
+.l-madLibs-fullscreen
+	{
+		width:100%; position:fixed;
+		height:100%; 
+		top:0; left:0; right:0; bottom:0;
+}
