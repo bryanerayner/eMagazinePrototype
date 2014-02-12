@@ -1,0 +1,14 @@
+.wordChoices {
+  width: 100%; }
+  .wordChoices .wordChoices-inputGroup {
+    position: absolute; }
+  .wordChoices .wordChoices-outputGroup {
+    position: absolute; }
+  .wordChoices .wordChoices-label {
+    width: 100%;
+    position: relative; }
+  .wordChoices .wordChoices-input {
+    width: 100%;
+    position: relative; }
+
+/*# sourceMappingURL=wordChoices.css.map */

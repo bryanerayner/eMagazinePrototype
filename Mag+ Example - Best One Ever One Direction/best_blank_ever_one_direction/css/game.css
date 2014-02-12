@@ -1,0 +1,366 @@
+@font-face
+{
+	font-family: 'idolwild';
+	src: url('../assets/fonts/Idolwild/idolwild.ttf');
+}
+
+
+body
+{
+	font-family: idolwild, Arial, sans-serif;
+}
+
+/* Layout */
+
+/*
+By changing the values of these styling rules, the pieces of
+the game can be changed to be whatever they need to be.
+ */
+ input{
+	 font-size:1em;
+	 
+ }
+
+/* Ensure the width for the pages is correct. */
+
+.l-madLibs-input
+{
+	/*Change these values to be the width and height of the input image*/
+	max-width: 800px; 
+	max-height: 1176px;
+}
+
+.l-madLibs-results
+{
+	/*Change these values to be the width and height of the results image*/
+		max-width: 800px; max-height: 1176px;
+}
+
+.l-madLibs-popup
+{
+	/*Change these values to be the width and height of the results image*/
+		max-width: 800px; max-height: 1176px;
+}
+
+.l-madLibs-page
+{
+    /*Change these values to be the width and height of the input image*/
+    	max-width: 800px; max-height: 1176px;
+}
+
+
+/* Propery position the action buttons on the page. */
+
+
+/*Position page actions for the input page*/
+.page-input .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+	 
+ left: 4%;
+	
+ bottom: 9%;
+ width: 91%;
+}
+
+/*Position page actions for the results page*/
+.page-results .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+ left: 4%;
+	
+ bottom: 9%;
+ width: 91%;
+}
+
+/*Position page actions for the results page*/
+.page-popup .page-actions
+{
+	/*This tells the container for the buttons where to go.*/
+ left: 4%;
+	
+ bottom: 2%;
+ width: 91%;
+}
+
+.page-intro .page-actions
+{
+left: 4%;
+	
+ bottom: 9%;
+ width: 91%;	
+}
+
+/*Position the See Results button. */
+#btn-seeResults
+{
+	right: 10px;
+	position: absolute;
+}
+
+/*Position the Reset button. */
+#btn-reset
+{
+	left: 10px;
+	position: absolute;
+}
+
+/*Position the See List button. */
+#btn-seeList	
+{
+	left: 10px;
+	position: absolute;
+	top: 0;
+}
+
+/*Position the ok button. */
+#btn-ok
+{
+	left: 10px;
+	position: relative;
+}
+
+#btn-next {
+right: 10px;
+position: absolute;
+}
+
+/*Properly position each individual word*/
+
+/*
+#word1Input
+{
+    top: 0px;
+    left: 0px;
+}*/
+
+.wordChoices .wordChoices-inputGroup
+{
+	width: 50%;
+	left: 170px;
+	border-bottom: 1px solid #666;
+}
+
+#word1Input
+{top: 170px;
+}
+
+#word2Input
+{
+	top: 220px;
+}
+
+#word3Input
+{
+	top: 270px;
+}
+
+#word4Input
+{
+	top: 320px;
+}
+
+#word5Input
+{
+	top: 370px;
+}
+
+#word6Input
+{
+	top: 420px;
+}
+
+#word7Input
+{
+	top: 470px;
+}
+
+#word8Input
+{
+	top: 520px;
+}
+
+#word9Input
+{
+	top: 570px;
+}
+
+#word10Input
+{
+	top: 620px;
+}
+
+#word11Input
+{
+	top: 670px;
+}
+
+#word12Input
+{
+	top: 720px;
+}
+
+#word13Input
+{
+	top: 770px;
+}
+
+#word14Input
+{
+	top: 820px;
+}
+
+#word15Input
+{
+	top: 870px;
+}
+
+#word16Input
+{
+	top: 920px;
+}
+
+#word17Input
+{
+	top: 970px;
+}
+
+#word18Input
+{
+	top: 1020px;
+}
+
+#word19Input
+{
+	top: 106px;
+	width: 160px;
+}
+
+
+/*Properly position each individual word for the outputs.*/
+/*#word1Output
+{
+    top: 0px;
+    left: 0px;
+}*/
+
+.wordChoices .wordChoices-outputGroup
+{
+	left:0;
+	min-height: 20px;
+	min-width: 50px;
+	text-overflow: ellipsis;
+}
+
+#word1Output
+{
+	left: 421px;
+	top: 181px;
+	width: 142px;
+}
+
+#word2Output
+{
+	left: 321px;  
+	top: 257px;  width: 142px;
+}
+
+#word3Output
+{
+	left: 544px;  
+	top: 257px;  width: 142px;
+}
+
+#word4Output
+{left: 254px;  top: 334px;  width: 142px;
+}
+
+#word5Output
+{
+	left: 59px;  
+	top: 371px;  width: 142px;    
+}
+
+#word6Output
+{
+	left: 538px;  top: 371px;  width: 142px;
+}
+
+#word7Output
+{
+	left: 383px;  
+	top: 447px;  width: 142px;
+}
+
+#word8Output
+{
+	left: 441px;  
+	top: 522px;  width: 142px;
+}
+
+#word9Output
+{
+	left: 201px;  
+	top: 598px;  width: 142px;
+}
+
+#word10Output
+{
+	left: 402px;  
+	top: 598px;  width: 142px;
+}
+
+#word11Output
+{
+	left: 66px;  
+	top: 635px;  
+	width: 143px;
+}
+
+#word12Output
+{
+	left: 128px;  
+	top: 712px;  width: 143px;
+}
+
+#word13Output
+{
+	left: 378px;  top: 712px;  width: 143px;
+}
+
+#word14Output
+{
+	left: 250px;  
+	top: 788px;  width: 143px;
+}
+
+#word15Output
+{
+	left: 66px;  
+	top: 902px;  width: 143px;
+}
+
+#word16Output
+{
+	left: 220px;  
+	top: 976px;  width: 143px;
+}
+
+#word17Output
+{
+	left: 422px;  top: 976px;  width: 143px;
+}
+
+#word18Output
+{
+	left: 132px;  
+	top: 1015px;  
+	width: 146px;
+}
+
+#word19Output
+{
+	left: 177;
+	top: 121;
+	width: 144px;
+}

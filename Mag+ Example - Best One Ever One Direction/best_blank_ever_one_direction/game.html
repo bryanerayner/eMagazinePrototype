@@ -1,0 +1,285 @@
+<html>
+<head>
+	<!-- These meta tags are important. Please do not move them around or change them, they ensure scaling happens correctly on tablets.-->
+	<meta name = "viewport" content = "width=712, maximum-scale=1.0, target-densitydpi=device-dpi">
+	<meta name="viewport" content="width=device-width; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no">
+
+	<title>Mad Libs Prototype</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/game.css">
+
+</head>
+<body class = "l-madLibs-fullscreen">
+		
+		<div class="l-madLibs-page" >
+			<div class="page page-intro">
+
+				<div class="page-background page-background-intro">
+					<img src = "assets/bg-intro.png">
+				</div>
+
+				<div class="page-actions">
+					<div class="btn btn-seeList" id ="btn-next">
+						<img src="assets/btn-next.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- This page is for the inputs - The 'enter your words here' page. -->
+		<div class="l-madLibs-input" >
+			<div class="page page-input">
+
+				<div class="page-background page-background-input">
+					<img src = "assets/bg-input.png">
+				</div>
+
+				<form action="" class = "page-wordChoices">
+					
+					<div class="wordChoices">
+
+						<!-- Uncomment this and use this div to make inputs on the page. Make sure the 
+						inputs are all unique.
+						<div class="wordChoices-inputGroup" id = "word1Input">
+							<label for="i-Word1Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word1Input" class="wordChoices-input word word-input" data-word="adjective1" data-wordType = "adjective">
+						</div>
+						-->
+						<div class="wordChoices-inputGroup" id = "word1Input">
+							<label for="i-Word1Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word1Input" class="wordChoices-input word word-input" data-word="verb1" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word2Input">
+							<label for="i-Word2Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word2Input" class="wordChoices-input word word-input" data-word="noun1" data-wordType = "noun">
+						</div>						
+						<div class="wordChoices-inputGroup" id = "word3Input">
+							<label for="i-Word3Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word3Input" class="wordChoices-input word word-input" data-word="verb2" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word4Input">
+							<label for="i-Word4Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word4Input" class="wordChoices-input word word-input" data-word="noun2" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word5Input">
+							<label for="i-Word5Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word5Input" class="wordChoices-input word word-input" data-word="noun3" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word6Input">
+							<label for="i-Word6Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word6Input" class="wordChoices-input word word-input" data-word="verb3" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word7Input">
+							<label for="i-Word7Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word7Input" class="wordChoices-input word word-input" data-word="noun4" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word8Input">
+							<label for="i-Word8Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word8Input" class="wordChoices-input word word-input" data-word="adjective1" data-wordType = "adjective">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word9Input">
+							<label for="i-Word9Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word9Input" class="wordChoices-input word word-input" data-word="verb4" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word10Input">
+							<label for="i-Word10Input" class="wordChoices-label">a time of day</label>
+							<input type="text" id = "i-Word10Input" class="wordChoices-input word word-input" data-word="time1" data-wordType = "time">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word11Input">
+							<label for="i-Word11Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word11Input" class="wordChoices-input word word-input" data-word="noun5" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word12Input">
+							<label for="i-Word12Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word12Input" class="wordChoices-input word word-input" data-word="verb5" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word13Input">
+							<label for="i-Word13Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word13Input" class="wordChoices-input word word-input" data-word="noun6" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word14Input">
+							<label for="i-Word14Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word14Input" class="wordChoices-input word word-input" data-word="verb6" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word15Input">
+							<label for="i-Word15Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word15Input" class="wordChoices-input word word-input" data-word="verb7" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word16Input">
+							<label for="i-Word16Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word16Input" class="wordChoices-input word word-input" data-word="verb8" data-wordType = "verb">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word17Input">
+							<label for="i-Word17Input" class="wordChoices-label">a time of day</label>
+							<input type="text" id = "i-Word17Input" class="wordChoices-input word word-input" data-word="time2" data-wordType = "time">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word18Input">
+							<label for="i-Word18Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word18Input" class="wordChoices-input word word-input" data-word="noun7" data-wordType = "noun">
+						</div>
+						<div class="wordChoices-inputGroup" id = "word19Input">
+							<label for="i-Word19Input" class="wordChoices-label"></label>
+							<input type="text" id = "i-Word19Input" class="wordChoices-input word word-input" data-word="noun8" data-wordType = "noun">
+						</div>
+
+					</div>
+
+
+
+				</form>
+				<div class="page-actions">
+					<div class="btn btn-seeList" id ="btn-reset">
+						<img src="assets/btn-reset.png" alt=""></div>
+					<div class="btn btn-seeList" id ="btn-seeResults">
+						<img src="assets/btn-done.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- This page is for the results of the page. This displays when the user clicks the 'See Results' button-->
+		<div class="l-madLibs-results">
+				
+			<div class="page page-results">
+
+
+
+				<div class="page-background page-background-results">
+					<img src = "assets/bg-results.png">
+				</div>
+
+
+
+				<div class="page-wordChoices">
+					<div class="wordChoices">
+
+
+						<!-- Uncomment this and use this div to make the outputs. Use the unique stuff.
+						<div class="wordChoices-outputGroup" id = "word1Output">
+							<span class = "word word-output wordType-adjective" id="adjective1"></span>
+						</div>
+						-->
+
+						
+						<div class="wordChoices-outputGroup" id = "word1Output">
+							<span class = "word word-output wordType-verb" id="verb1"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word2Output">
+							<span class = "word word-output wordType-verb" id="noun1"></span>
+						</div>						
+						<div class="wordChoices-outputGroup" id = "word3Output">
+							<span class = "word word-output wordType-verb" id="verb2"></span>
+						</div>						
+						<div class="wordChoices-outputGroup" id = "word4Output">
+							<span class = "word word-output wordType-verb" id="noun2"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word5Output">
+							<span class = "word word-output wordType-verb" id="noun3"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word6Output">
+							<span class = "word word-output wordType-verb" id="verb3"></span>
+						</div>																		
+						<div class="wordChoices-outputGroup" id = "word7Output">
+							<span class = "word word-output wordType-verb" id="noun4"></span>
+						</div>						
+						<div class="wordChoices-outputGroup" id = "word8Output">
+							<span class = "word word-output wordType-verb" id="adjective1"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word9Output">
+							<span class = "word word-output wordType-noun" id="verb4"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word10Output">
+							<span class = "word word-output wordType-noun" id="time1"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word11Output">
+							<span class = "word word-output wordType-noun" id="noun5"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word12Output">
+							<span class = "word word-output wordType-noun" id="verb5"></span>
+						</div>						
+						<div class="wordChoices-outputGroup" id = "word13Output">
+							<span class = "word word-output wordType-noun" id="noun6"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word14Output">
+							<span class = "word word-output wordType-noun" id="verb6"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word15Output">
+							<span class = "word word-output wordType-noun" id="verb7"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word16Output">
+							<span class = "word word-output wordType-noun" id="verb8"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word17Output">
+							<span class = "word word-output wordType-adjective" id="time2"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word18Output">
+							<span class = "word word-output wordType-time" id="noun7"></span>
+						</div>
+						<div class="wordChoices-outputGroup" id = "word19Output">
+							<span class = "word word-output wordType-time" id="noun8"></span>
+						</div>
+						
+
+					</div>
+				</div>
+				<div class="page-actions">
+					<div class="btn btn-seeList" id ="btn-seeList">
+						<img src="assets/btn-back.png" alt=""></div>
+				</div>
+
+
+			</div>
+
+		</div>	
+
+		<!-- This page by default is for the popup displayed when no words are entered. -->
+		<div class="l-madLibs-popup">
+				
+			<div class="page page-popup">
+
+
+
+				<div class="page-background page-background-results">
+					<img src = "assets/bg-popup.png">
+				</div>
+
+				<div class="page-actions">
+					<div class="btn btn-seeList" id ="btn-ok">
+						<img src="assets/btn-back.png" alt=""></div>
+				</div>
+
+
+			</div>
+
+		</div>	
+<!-- Include this in the page to put another page of your choosing.
+
+
+	Review the javascript in game.js to see an example of how to display this page.
+
+		<div class="l-madLibs-page">
+				
+			<div class="page page-myPageNameHere">
+
+
+
+				<div class="page-background page-background-results">
+					<img src = "assets/bg-popup.png">
+				</div>
+
+				<div class="page-actions">
+					<div class="btn btn-seeList" id ="btn-ok">
+						<img src="assets/btn-ok.png" alt=""></div>
+				</div>
+
+
+			</div>
+
+		</div>	
+-->
+
+	<script src = "js/lib/jquery-1.11.0.min.js" type = "text/javascript"></script>
+	<script src = "js/lib/lodash-2.4.1.min.js" type = "text/javascript"></script>
+	<script src = "js/lib/MadLibs.js" type = "text/javascript"></script>
+	<script src = "js/game.js" type = "text/javascript"></script>
+</body>
+</html>

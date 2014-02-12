@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<issue mib-version="5">	<brand>Review</brand>
+	<issue-guid>com.magplus.review.issue.Review.1</issue-guid>
+	<publication-date>2010-01-01T12:00Z</publication-date>
+	<description>Review of: magplus</description>
+	<short-description>Review: magplus</short-description>
+	<device>android_1280x800_149</device>
+	<verticals>		<vertical link="magplus" name="magplus" orientation="auto" />	</verticals>
+</issue>

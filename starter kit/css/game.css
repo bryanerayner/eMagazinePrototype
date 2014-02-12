@@ -6,30 +6,50 @@ the game can be changed to be whatever they need to be.
  */
  
 
+/* A font face rule example. */
+@font-face
+{
+	font-family: 'idolwild';
+	src: url('../assets/fonts/Idolwild/idolwild.ttf');
+}
+
+/*This uses a custom font face - Comment out the content of this or change the font*/
+body
+{
+	font-family: idolwild, Arial, sans-serif;
+}
+
+/*Forcing the font size to 1em prevents issues */
+ input{
+	 font-size:1em;
+	 
+ }
+
 /* Ensure the width for the pages is correct. */
 
 .l-madLibs-input
 {
 	/*Change these values to be the width and height of the input image*/
-	max-width: 600px; max-height: 900px;
+	max-width: 800px; 
+	max-height: 1176px;
 }
 
 .l-madLibs-results
 {
 	/*Change these values to be the width and height of the results image*/
-	max-width: 600px; max-height: 900px;
+		max-width: 800px; max-height: 1176px;
 }
 
 .l-madLibs-popup
 {
 	/*Change these values to be the width and height of the results image*/
-	max-width: 600px; max-height: 900px;
+		max-width: 800px; max-height: 1176px;
 }
 
 .l-madLibs-page
 {
     /*Change these values to be the width and height of the input image*/
-    max-width: 600px; max-height: 900px;
+    	max-width: 800px; max-height: 1176px;
 }
 
 
@@ -40,28 +60,39 @@ the game can be changed to be whatever they need to be.
 .page-input .page-actions
 {
 	/*This tells the container for the buttons where to go.*/
-	bottom:40px; 
- left: 0;
+	 
+ left: 4%;
 	
- bottom: 14%;
- width: 100%;
+ bottom: 9%;
+ width: 91%;
 }
 
 /*Position page actions for the results page*/
 .page-results .page-actions
 {
 	/*This tells the container for the buttons where to go.*/
-	bottom: 11%; 
-	left: 0;
-	width: 100%;
+ left: 4%;
+	
+ bottom: 9%;
+ width: 91%;
 }
 
 /*Position page actions for the results page*/
 .page-popup .page-actions
 {
 	/*This tells the container for the buttons where to go.*/
-	bottom:40px; 
-	right: 50px;
+ left: 4%;
+	
+ bottom: 2%;
+ width: 91%;
+}
+
+.page-intro .page-actions
+{
+left: 4%;
+	
+ bottom: 9%;
+ width: 91%;	
 }
 
 /*Position the See Results button. */
@@ -81,7 +112,7 @@ the game can be changed to be whatever they need to be.
 /*Position the See List button. */
 #btn-seeList	
 {
-	right: 30px;
+	left: 10px;
 	position: absolute;
 	top: 0;
 }
@@ -89,8 +120,13 @@ the game can be changed to be whatever they need to be.
 /*Position the ok button. */
 #btn-ok
 {
-	left: 250px;
+	left: 10px;
 	position: relative;
+}
+
+#btn-next {
+right: 10px;
+position: absolute;
 }
 
 
