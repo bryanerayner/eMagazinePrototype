@@ -215,8 +215,9 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
   .page .page-actions {
     z-index: 10;
     position: absolute;
-    bottom: 10%;
-    left: 10%; }
+    bottom: 11%;
+    left: 0%;
+    width: 100%; }
 
 .page.is-page-primary {
   z-index: 5000; }
@@ -236,5 +237,3 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, form, input {
 
 textarea, input {
   border-bottom-color: #232323; }
-
-/*# sourceMappingURL=styles.css.map */

@@ -12,6 +12,10 @@ $(document).ready(function()
 		});	
 	});
 
+	$("#btn-reset").on("click", function(){
+		game.reset();
+	});
+
 	$("#btn-ok").on("click", function(){
 		if (game.viewPage("input"))
 		{
@@ -22,6 +26,7 @@ $(document).ready(function()
 			game.viewPage("input");
 		}
 	});
+
 	$("#btn-seeResults").on("click", function(){
 		if (game.viewPage("results"))
 		{
@@ -33,6 +38,7 @@ $(document).ready(function()
 			game.viewPage("popup");
 		}
 	});
+	
 	$("#btn-seeList").on("click", function(){
 		if (game.viewPage("input"))
 		{

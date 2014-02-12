@@ -46,10 +46,9 @@
   .page .page-actions {
     z-index: 10;
     position: absolute;
-    bottom: 10%;
-    left: 10%; }
+    bottom: 11%;
+    left: 0%;
+    width: 100%; }
 
 .page.is-page-primary {
   z-index: 5000; }
-
-/*# sourceMappingURL=page.css.map */
