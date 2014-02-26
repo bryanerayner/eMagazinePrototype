@@ -5,7 +5,7 @@
 	<deck>
 		<slide slide-id="slide-1" height="1280" background-color="255white" background-color-rgb="255,255,255">
 			<block id="" margin-left="241" type="html" height="1277" width="1039" pinning-edge="left" pin-to="outer-left" vpinning-edge="top" vpin-to="outer-top">
-				<html type="0" scales-page-to-fit="0" resize-on-rotate="0" src="magplus_419_html/game.html"/>
+				<html type="0" scales-page-to-fit="1" resize-on-rotate="1" left-margin="116" top-margin="0" right-margin="116" bottom-margin="1" src="magplus_419_html/game.html"/>
 			</block>
 		</slide>
 	</deck>
