@@ -17,8 +17,8 @@ By changing the values of these styling rules, the pieces of
 the game can be changed to be whatever they need to be.
  */
  input{
-	 font-size:1em;
-	 
+	 font-size:1.3em;
+	 font-family:idolwild, Arial, sans-serif;
  }
 
 /* Ensure the width for the pages is correct. */
@@ -246,10 +246,22 @@ position: absolute;
 
 .wordChoices .wordChoices-outputGroup
 {
-	left:0;
+	left:0; 
+	font-size: 1.35em;
 	min-height: 20px;
 	min-width: 50px;
 	text-overflow: ellipsis;
+	max-height: 24px;
+}
+
+.wordChoices .wordChoices-outputGroup span
+{
+	text-overflow:ellipsis;
+	width:100%;
+	max-height: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 #word1Output
